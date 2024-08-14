@@ -1,0 +1,28 @@
+*
+{
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  background-color: hsl(202, 86%, 94%);
+}
+
+main
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: auto;
+  width: 55%;
+  height: 97dvh;
+}
+
+footer
+{
+  font-size: 11px; 
+  text-align: center;
+  color: hsl(228, 45%, 44%);
+}
