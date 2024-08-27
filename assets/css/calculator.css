@@ -2,5 +2,162 @@
 {
     width: 100%;
     flex: 1;
-    padding: 40px;
+    padding: 30px;
+}
+
+.calculator header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.calculator header h1
+{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.calculator header p
+{
+    font-size: 14px;
+    font-weight: 700;
+    color: hsl(200, 24%, 40%);
+    opacity: 65%;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+}
+
+form label:not([for="repayment"]):not([for="interest"]), form p, form legend
+{
+    color: hsl(200, 26%, 54%);
+    font-weight: 700;
+}
+
+form label
+{
+    margin-bottom: 10px;
+}
+
+form input
+{
+    width: 100%;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.icon-left, .icon-right,  .type-container input, .submit-container, .repayment-container, .interest-container
+{
+    border: 1px solid hsl(200, 26%, 54%);
+    border-radius: 5px;
+}
+
+.icon-left, .icon-right
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.icon-left p, .icon-right p
+{
+    background-color: hsl(202, 86%, 94%);
+    padding: 10px 15px;
+}
+
+.term-rate
+{
+    display: flex;
+    gap: 20px;
+}
+
+.term-container, .rate-container
+{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/********** Radio buttons **********/
+.type-container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.repayment-container, .interest-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    white-space: nowrap;
+    padding: 10px 15px;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.repayment-container label, .interest-container label
+{
+    margin-bottom: 0;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.repayment-container input, .interest-container input
+{
+    width: auto;
+}
+
+.repayment-container input, .interest-container input
+{
+    accent-color: hsl(61, 70%, 52%);
+    border: none;
+}
+
+.repayment-container:hover, .interest-container:hover
+{
+    border: 1px solid hsl(61, 70%, 52%);
+}
+
+.repayment-container:has(input[type="radio"]:checked), .interest-container:has(input[type="radio"]:checked)
+{
+    background-color: hsl(61, 70%, 52%, 20%);
+    border: 1px solid hsl(61, 70%, 52%);
+}
+
+
+/********** Submit button **********/
+.submit-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    background-color: hsl(61, 70%, 52%);
+    max-width: 225px;
+    cursor: pointer;
+}
+
+.submit-container input
+{
+    background-color: transparent;
+}
+
+.submit-container img
+{
+    width: 20px;
 }
